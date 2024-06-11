@@ -1,0 +1,4 @@
+torch==2.2.2+cu121
+torchvision==0.17.2
+tqdm==4.65.0
+kaggle==1.6.14
