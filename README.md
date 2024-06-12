@@ -1,5 +1,7 @@
 # Plant-Disease-Identification
 
+![preface](./images/preface.png)
+
 ## Project Overview
 
 Smart Agriculture Project Based on Deep Learning-Plant Disease Detection. By building a CNN model, we can predict the current health status of the plant: healthy, powdery, and rusty.
@@ -50,3 +52,4 @@ This project can predict all the images in a folder. Just specify the folder pat
 python main.py your_folder_path
 ```
 
+## Project Structure
