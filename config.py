@@ -15,3 +15,7 @@ VALIDATION_BATCH_SIZE = 2
 EPOCHS = 10
 LEARNING_RATE = 1e-5
 
+# Models path
+RESNET34_PARTS_PATH = "./models/resnet34"
+RESNET50_PARTS_PATH = "./models/resnet50"
+RESNET101_PARTS_PATH = "./models/resnet101"
