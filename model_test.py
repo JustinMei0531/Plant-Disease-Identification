@@ -1,13 +1,19 @@
 import torch
 from tqdm import tqdm
+import os
 from datasets import create_test_loader
+import config
+
 # Load test loader
 test_loader = create_test_loader()
 # Get runtime device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Load model state
-net = torch.load("./models/resnet34/resnet34-plant-disease-recognition.pt")
+# Load model
+model_path = config.RESNET50_MODEL_PATH
+if not os.path.exists(model_path):
+    raise FileNotFoundError("Can not find model {}".format(model_path))
+net = torch.load(model_path)
 
 # Set model to test mode
 net.eval()

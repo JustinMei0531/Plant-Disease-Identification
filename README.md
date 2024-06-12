@@ -32,7 +32,7 @@ This step is necessary if you want to reuse the dataset. After performing these 
 
 ### 2. Model  Training
 
-I implemented three types of residual networks in the model.py file. In the model_training.py file, you can select the model you want to train. In the previous version, I provided three trained models, but due to the size of the GitHub upload file, I had to delete them in the end.
+I implemented three types of residual networks in the model.py file. In the model_training.py file, you can select the model you want to train. In the previous version, I provide three trained models, but due to the size limit of GitHub upload files, I split them into several parts. For specific operations, please refer to Part 6.
 
 Execute "model_training.py": `python model_training.py`
 
@@ -44,7 +44,7 @@ Execute "model_test.py": `python model_test.py`
 
 Execute "model_validation.py": `python model_validation.py`
 
-### 5. Final use method
+### 5. Final Use Method
 
 This project can predict all the images in a folder. Just specify the folder path:
 
@@ -52,4 +52,10 @@ This project can predict all the images in a folder. Just specify the folder pat
 python main.py your_folder_path
 ```
 
-## Project Structure
+### 6. Use Pre-trained Models
+Execute "utils.py": `python utils.py`
+
+## Final Effect
+There is an images folder under the project folder, which contains several plant disease pictures from Google images. You can use it as a test.
+![effects](./static/effects.png)
+The results shown in the picture are run on vscode.

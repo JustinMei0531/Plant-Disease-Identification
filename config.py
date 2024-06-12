@@ -19,3 +19,7 @@ LEARNING_RATE = 1e-5
 RESNET34_PARTS_PATH = "./models/resnet34"
 RESNET50_PARTS_PATH = "./models/resnet50"
 RESNET101_PARTS_PATH = "./models/resnet101"
+
+RESNET34_MODEL_PATH = "./models/resnet34/resnet34-plant-disease-recognition.pt"
+RESNET50_MODEL_PATH = "./models/resnet50/resnet50-plant-disease-recognition.pt"
+RESNET101_MODEL_PATH = "./models/resnet101/resnet101-plant-disease-recognition.pt"

@@ -164,3 +164,6 @@ cython_debug/
 
 # Deep learning datasets
 dataset/
+# Deep learning pre-trained models
+*.pt
+*.pth

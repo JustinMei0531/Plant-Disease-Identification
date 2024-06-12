@@ -55,6 +55,4 @@ for epoch in range(config.EPOCHS):
 print("Training Completed!")
 
 # Save model
-if not os.path.exists("./models"):
-    os.mkdir("./models")
-torch.save(net, "./models/resnet101-plant-disease-recognition.pt")
+torch.save(net, "resnet101-plant-disease-recognition.pt")

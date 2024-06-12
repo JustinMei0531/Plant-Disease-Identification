@@ -32,7 +32,11 @@ def main(folder_path):
     # Get runtime device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # Load pretrained model
-    net = torch.load("./models/resnet50-plant-disease-recognition.pt").to(device)
+    # Before using pretrained model, make sure you have executed "utils.py"
+    model_path = "./models/resnet50/resnet50-plant-disease-recognition.pt"
+    if not os.path.exists(model_path):
+        raise FileNotFoundError("Can not find model {}".format(model_path))
+    net = torch.load(model_path).to(device)
     # Define classes
     classes = ("Healthy", "Powdery", "Rust")
     

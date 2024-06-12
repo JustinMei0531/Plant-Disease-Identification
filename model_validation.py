@@ -1,4 +1,6 @@
 import torch
+import os
+import config
 from datasets import create_validation_loader
 
 
@@ -6,8 +8,11 @@ from datasets import create_validation_loader
 validation_loader = create_validation_loader()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-net = torch.load("./models/resnet50-plant-disease-recognition.pt").to(device)
-# Set model to evaluation mode
+model_path = config.RESNET50_MODEL_PATH
+if not os.path.exists(model_path):
+    raise FileNotFoundError("Can not find model {}".format(model_path))
+net = torch.load(model_path).to(device)
+
 net.eval()
 
 total_accuracy = 0
