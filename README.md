@@ -58,4 +58,4 @@ Execute "utils.py": `python utils.py`
 ## Final Effect
 There is an images folder under the project folder, which contains several plant disease pictures from Google images. You can use it as a test.
 ![effects](./static/effects.png)
-The results shown in the picture are run on vscode.
+<br>The results shown in the picture are run on vscode.
