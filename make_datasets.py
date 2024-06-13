@@ -62,4 +62,6 @@ if __name__ == "__main__":
     # list all subfolders under dataset folder
     for folder in os.listdir(config.DATASET_PATH):
         path = os.path.join(config.DATASET_PATH, folder)
-        adjust_folder_structure(path)
+        # Only operate on folders.
+        if os.path.isdir(path):
+            adjust_folder_structure(path)
