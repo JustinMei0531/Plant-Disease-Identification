@@ -13,7 +13,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model_path = config.RESNET50_MODEL_PATH
 if not os.path.exists(model_path):
     raise FileNotFoundError("Can not find model {}".format(model_path))
-net = torch.load(model_path)
+net = torch.load(model_path).to(device)
 
 # Set model to test mode
 net.eval()
