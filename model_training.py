@@ -4,7 +4,6 @@ from tqdm import tqdm
 from model import ResNet34, ResNet50, ResNet101
 from datasets import create_train_loader, create_test_loader
 import config
-import os
 
 # Get runtime device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
